@@ -1,0 +1,32 @@
+{
+    "name": "youmad/endurance-workout",
+    "description": "Immutable workout prescriptions with typed targets and bounded repeat occurrence reads",
+    "type": "library",
+    "license": "MPL-2.0",
+    "require": {
+        "php": "^8.5",
+        "youmad/endurance-foundation": "^0.1.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Youmad\\Endurance\\Workout\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Youmad\\Endurance\\Workout\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "example": "@php examples/intervals.php",
+        "check": [
+            "@composer validate --strict",
+            "@test",
+            "@example"
+        ]
+    }
+}

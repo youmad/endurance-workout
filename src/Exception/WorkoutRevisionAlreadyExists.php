@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\Exception;
+namespace Endurance\Workout\Exception;
 
 final class WorkoutRevisionAlreadyExists extends \RuntimeException
 {

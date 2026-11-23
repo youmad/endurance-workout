@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\Entity;
+namespace Endurance\Workout\Entity;
 
-use Youmad\Endurance\Foundation\ValueObject\Instant;
-use Youmad\Endurance\Workout\ValueObject\WorkoutId;
-use Youmad\Endurance\Workout\ValueObject\WorkoutRevisionId;
-use Youmad\Endurance\Workout\ValueObject\WorkoutRevisionReference;
-use Youmad\Endurance\Workout\Workout;
+use Endurance\Foundation\ValueObject\Instant;
+use Endurance\Workout\ValueObject\WorkoutId;
+use Endurance\Workout\ValueObject\WorkoutRevisionId;
+use Endurance\Workout\ValueObject\WorkoutRevisionReference;
+use Endurance\Workout\Workout;
 
 final readonly class WorkoutRevision
 {

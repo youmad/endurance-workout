@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\Application\Port;
+namespace Endurance\Workout\Application\Port;
 
-use Youmad\Endurance\Workout\Entity\WorkoutPlan;
-use Youmad\Endurance\Workout\Entity\WorkoutRevision;
-use Youmad\Endurance\Workout\ValueObject\ExpectedWorkoutState;
-use Youmad\Endurance\Workout\ValueObject\WorkoutId;
-use Youmad\Endurance\Workout\ValueObject\WorkoutRevisionReference;
+use Endurance\Workout\Entity\WorkoutPlan;
+use Endurance\Workout\Entity\WorkoutRevision;
+use Endurance\Workout\ValueObject\ExpectedWorkoutState;
+use Endurance\Workout\ValueObject\WorkoutId;
+use Endurance\Workout\ValueObject\WorkoutRevisionReference;
 
 /** Unscoped persistence. Authorization belongs to the calling application. */
 interface WorkoutRepository

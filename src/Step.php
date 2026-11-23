@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout;
+namespace Endurance\Workout;
 
-use Youmad\Endurance\Workout\Duration\DistanceDuration;
-use Youmad\Endurance\Workout\Duration\OpenDuration;
-use Youmad\Endurance\Workout\Duration\TimeDuration;
-use Youmad\Endurance\Workout\Target\FreeTarget;
-use Youmad\Endurance\Workout\Target\TargetRange;
+use Endurance\Workout\Duration\DistanceDuration;
+use Endurance\Workout\Duration\OpenDuration;
+use Endurance\Workout\Duration\TimeDuration;
+use Endurance\Workout\Target\FreeTarget;
+use Endurance\Workout\Target\TargetRange;
 
 final readonly class Step
 {

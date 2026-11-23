@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\ValueObject;
+namespace Endurance\Workout\ValueObject;
 
-use Youmad\Endurance\Foundation\ValueObject\Uuid;
+use Endurance\Foundation\ValueObject\Uuid;
 
 final readonly class WorkoutRevisionId
 {

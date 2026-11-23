@@ -4,12 +4,12 @@ Immutable workout prescriptions, bounded repeat traversal and versioned plans
 for PHP 8.5.
 
 ```bash
-composer require youmad/endurance-workout
+composer require endurance/workout
 ```
 
 ```php
-use Youmad\Endurance\Workout\{Repeat, Sequence, Step, StepPurpose, Workout};
-use Youmad\Endurance\Workout\Duration\TimeDuration;
+use Endurance\Workout\{Repeat, Sequence, Step, StepPurpose, Workout};
+use Endurance\Workout\Duration\TimeDuration;
 
 $work = new Step(new TimeDuration(120_000_000));
 $recovery = new Step(new TimeDuration(60_000_000), purpose: StepPurpose::Recovery);

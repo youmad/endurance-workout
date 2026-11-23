@@ -2,24 +2,24 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\Tests;
+namespace Endurance\Workout\Tests;
 
+use Endurance\Foundation\ValueObject\Instant;
+use Endurance\Workout\Duration\TimeDuration;
+use Endurance\Workout\Entity\WorkoutPlan;
+use Endurance\Workout\Entity\WorkoutRevision;
+use Endurance\Workout\Exception\WorkoutConflict;
+use Endurance\Workout\Repeat;
+use Endurance\Workout\Sequence;
+use Endurance\Workout\Step;
+use Endurance\Workout\ValueObject\ExpectedWorkoutState;
+use Endurance\Workout\ValueObject\WorkoutId;
+use Endurance\Workout\ValueObject\WorkoutRevisionId;
+use Endurance\Workout\ValueObject\WorkoutRevisionReference;
+use Endurance\Workout\ValueObject\WorkoutVersion;
+use Endurance\Workout\Workout;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use Youmad\Endurance\Foundation\ValueObject\Instant;
-use Youmad\Endurance\Workout\Duration\TimeDuration;
-use Youmad\Endurance\Workout\Entity\WorkoutPlan;
-use Youmad\Endurance\Workout\Entity\WorkoutRevision;
-use Youmad\Endurance\Workout\Exception\WorkoutConflict;
-use Youmad\Endurance\Workout\Repeat;
-use Youmad\Endurance\Workout\Sequence;
-use Youmad\Endurance\Workout\Step;
-use Youmad\Endurance\Workout\ValueObject\ExpectedWorkoutState;
-use Youmad\Endurance\Workout\ValueObject\WorkoutId;
-use Youmad\Endurance\Workout\ValueObject\WorkoutRevisionId;
-use Youmad\Endurance\Workout\ValueObject\WorkoutRevisionReference;
-use Youmad\Endurance\Workout\ValueObject\WorkoutVersion;
-use Youmad\Endurance\Workout\Workout;
 
 final class WorkoutPlanTest extends TestCase
 {

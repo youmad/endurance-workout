@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\ValueObject;
+namespace Endurance\Workout\ValueObject;
 
 final readonly class ExpectedWorkoutState
 {

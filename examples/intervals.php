@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-use Youmad\Endurance\Foundation\ValueObject\Instant;
-use Youmad\Endurance\Workout\Duration\OpenDuration;
-use Youmad\Endurance\Workout\Duration\TimeDuration;
-use Youmad\Endurance\Workout\Entity\WorkoutPlan;
-use Youmad\Endurance\Workout\Entity\WorkoutRevision;
-use Youmad\Endurance\Workout\Repeat;
-use Youmad\Endurance\Workout\Sequence;
-use Youmad\Endurance\Workout\Step;
-use Youmad\Endurance\Workout\StepPurpose;
-use Youmad\Endurance\Workout\Target\TargetMetric;
-use Youmad\Endurance\Workout\Target\TargetRange;
-use Youmad\Endurance\Workout\ValueObject\WorkoutId;
-use Youmad\Endurance\Workout\ValueObject\WorkoutRevisionId;
-use Youmad\Endurance\Workout\Workout;
+use Endurance\Foundation\ValueObject\Instant;
+use Endurance\Workout\Duration\OpenDuration;
+use Endurance\Workout\Duration\TimeDuration;
+use Endurance\Workout\Entity\WorkoutPlan;
+use Endurance\Workout\Entity\WorkoutRevision;
+use Endurance\Workout\Repeat;
+use Endurance\Workout\Sequence;
+use Endurance\Workout\Step;
+use Endurance\Workout\StepPurpose;
+use Endurance\Workout\Target\TargetMetric;
+use Endurance\Workout\Target\TargetRange;
+use Endurance\Workout\ValueObject\WorkoutId;
+use Endurance\Workout\ValueObject\WorkoutRevisionId;
+use Endurance\Workout\Workout;
 
 require $argv[1] ?? dirname(__DIR__).'/vendor/autoload.php';
 $work = new Step(new TimeDuration(120_000_000), new TargetRange(TargetMetric::PowerPercentFtp, 105, 115), StepPurpose::Active, 'Work');

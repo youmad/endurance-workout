@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\Target;
+namespace Endurance\Workout\Target;
 
 /** Relative metrics retain their declared reference; no athlete baseline is selected here. */
 enum TargetMetric: string

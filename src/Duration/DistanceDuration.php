@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\Duration;
+namespace Endurance\Workout\Duration;
 
 final readonly class DistanceDuration
 {

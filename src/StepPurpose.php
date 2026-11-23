@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout;
+namespace Endurance\Workout;
 
 enum StepPurpose: string
 {

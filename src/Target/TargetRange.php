@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\Target;
+namespace Endurance\Workout\Target;
 
 /** Bounds are inclusive and use the metric's declared unit. */
 final readonly class TargetRange

@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Youmad\Endurance\Workout\Tests;
+namespace Endurance\Workout\Tests;
 
+use Endurance\Workout\Duration\OpenDuration;
+use Endurance\Workout\Duration\TimeDuration;
+use Endurance\Workout\Repeat;
+use Endurance\Workout\Sequence;
+use Endurance\Workout\Step;
+use Endurance\Workout\Workout;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use Youmad\Endurance\Workout\Duration\OpenDuration;
-use Youmad\Endurance\Workout\Duration\TimeDuration;
-use Youmad\Endurance\Workout\Repeat;
-use Youmad\Endurance\Workout\Sequence;
-use Youmad\Endurance\Workout\Step;
-use Youmad\Endurance\Workout\Workout;
 
 final class SequenceTest extends TestCase
 {
